@@ -1,18 +1,28 @@
-# Welcome!
+# C# || Operator Reference
 
-This C# template lets you get started quickly with a simple one-page playground.
+## C# code - No need to download anything, this code works in your browser
+AmieDD www.amiedd.com
+Code, Cosplay, and Games
+
 
 ```C# runnable
 // { autofold
-using System;
-
-class Hello 
+bool SecondOperand()
 {
-    static void Main() 
-    {
-// }
+    Console.WriteLine("Second operand is evaluated.");
+    return true;
+}
 
-Console.WriteLine("Hello World!");
+bool a = true || SecondOperand();
+Console.WriteLine(a);
+// Output:
+// True
+
+bool b = false || SecondOperand();
+Console.WriteLine(b);
+// Output:
+// Second operand is evaluated.
+// True
 
 // { autofold
     }
@@ -20,6 +30,6 @@ Console.WriteLine("Hello World!");
 // }
 ```
 
-# Advanced usage
+# About C# || Operators
 
-If you want a more complex example (external libraries, viewers...), use the [Advanced C# template](https://tech.io/select-repo/386)
+The conditional logical OR operator || calculates the logical OR of its bool operands. The result of x || y is true if either x or y evaluates to true. If not the result is false. If the first operand evaluates to true, the second operand is not evaluated and the result of operation is true.
